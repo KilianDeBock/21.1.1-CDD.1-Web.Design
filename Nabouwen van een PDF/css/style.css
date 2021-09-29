@@ -1,0 +1,21 @@
+body {
+    font-family: 'Yaldevi', sans-serif;
+    margin: 8rem;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #4a7fda;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
