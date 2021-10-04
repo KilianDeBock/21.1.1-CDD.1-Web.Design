@@ -1,0 +1,30 @@
+body {
+    background-image: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.text {
+    width: 50%;
+    /* Below is added for compatibility with older browsers */
+    display: table;
+    margin: .7rem auto;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
