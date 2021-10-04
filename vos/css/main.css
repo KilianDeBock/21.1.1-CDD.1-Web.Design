@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+body {
+    background: #cbb867;
+}
+
+.foxycontent {
+    width: 50%;
+    /* Below is added for compatibility with older browsers */
+    display: table;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 6rem;
+}
+
+img {
+    padding: 10px;
+    background-color: #8c6f4b;
+    border-radius: 2rem;
+}
+
+p, h1, img {
+    background: #8c6f4b;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    padding: 30px;
+    border-radius: 2rem;
+}

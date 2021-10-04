@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.frozen {
+    width: 40%;
+    /* Below is added for compatibility with older browsers */
+    display: table;
+    margin: .7rem auto;
+
+    background: #d1e9e9;
+    border-radius: 2rem 0;
+    border: .4rem solid #9fc5c8;
+    padding: 2rem;
+    box-shadow: -10px 10px 50px 1px rgba(93, 93, 93, 0.47);
+}
+
+p, h2 {
+    margin-bottom: 1rem;
+    background: #9fc5c8;
+
+    border-radius: 1rem;
+    border: 1px solid white;
+    padding: 1.3rem;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: "Patrick Hand", cursive;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+li {
+    list-style: none;
+    background-image: url("../images/olafhead.png");
+    background-repeat: no-repeat;
+    background-position: left;
+
+    line-height: 2.1rem;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+body {
+    background: #4498c7;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+
+}
