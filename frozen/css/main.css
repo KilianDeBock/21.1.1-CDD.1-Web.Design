@@ -9,11 +9,14 @@
 }
 
 .frozen {
-    width: 40%;
-    /* Below is added for compatibility with older browsers */
-    display: table;
-    margin: .7rem auto;
+    /* Middle Code */
+    width: 100vm;
+    max-width: 37.5rem;
+    /*max-width: 50rem;*/
+    margin: auto;
 
+    /* Layout code */
+    margin-bottom: .7rem;
     background: #d1e9e9;
     border-radius: 2rem 0;
     border: .4rem solid #9fc5c8;
