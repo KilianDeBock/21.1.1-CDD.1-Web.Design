@@ -1,0 +1,80 @@
+@import url(../fonts/Kalam/Kalam.css);
+@import url(../fonts/Varela/Varela.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #141414;
+    margin: 0 2rem;
+}
+
+.middlebox {
+    box-sizing: content-box;
+    padding: 0;
+    width: 100%;
+    max-width: 50rem;
+    margin: 2rem auto;
+    background-color: #343434;
+    color: white;
+    border: 2px solid black;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.content-box {
+    border-top: 2px solid black;
+}
+
+img {
+    display: block;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 18.75rem;
+    border: .3rem dashed white;
+}
+
+h3 {
+    padding: .5rem 1rem;
+    border-left: .3rem solid red;
+    background-color: #515151;
+    font-family: Kalam, cursive;
+}
+
+h1, h2 {
+    font-family: Kalam, cursive;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+p {
+    font-family: Varela, cursive;
+}
+
+.first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.end {
+    padding: 2rem;
+    text-align: center;
+    background-color: #6c0000;
+    border-top: 2px solid black;
+}
+
+a {
+    color: #f54a4a;
+}
