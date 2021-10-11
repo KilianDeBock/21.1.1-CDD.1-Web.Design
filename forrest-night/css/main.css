@@ -3,7 +3,7 @@
 body {
     background-image: url("../images/background.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     background-attachment: fixed;
     background-position: bottom;
     opacity: 1;
@@ -11,15 +11,13 @@ body {
 }
 
 .end {
-    padding-bottom: 20rem;
+    padding-bottom: 15vw;
 }
 
 .text {
     width: 50%;
-    /* Below is added for compatibility with older browsers */
-    display: table;
     margin: .7rem auto;
-    color: #13152A
+    color: #13152A;
 }
 
 span {
