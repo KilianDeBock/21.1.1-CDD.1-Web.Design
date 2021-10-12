@@ -12,6 +12,16 @@
     font-family: Varela, cursive;
 }
 
+figure {
+    width: 100%;
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 18.75rem;
+    box-sizing: border-box;
+    border: 3px dashed #141414;
+    text-align: center;
+}
+
 header, main, footer {
     width: 100%;
     margin: 0 auto;
@@ -21,14 +31,21 @@ header, main, footer {
     border-right: 2px solid #3E3E3E;
 }
 
-figure {
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 21.75rem;
+    padding: 0 1.5rem;
+    margin: 0 auto 1.5rem;
+}
+
+audio {
     width: 100%;
     display: block;
-    margin: 1.5rem auto;
-    max-width: 18.75rem;
-    box-sizing: border-box;
-    border: 3px dashed #141414;
-    text-align: center;
+    max-width: 25rem;
+    padding: 0 1.5rem;
+    margin: 0 auto 1.5rem;
 }
 
 img {
@@ -91,21 +108,6 @@ section {
 
 h2 {
     padding-bottom: 1.5rem;
-}
-
-audio {
-    width: 100%;
-    max-width: 25rem;
-    display: block;
-    padding: 0 1.5rem;
-    margin: 0 auto 1.5rem;
-}
-
-video {
-    width: 100%;
-    height: auto;
-    padding: 0 1.5rem;
-    margin: 0 auto 1.5rem;
 }
 
 a {
