@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.wrapper {
+  text-align: center;
+  width: 30rem;
+  max-width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.card {
+  margin-bottom: 2rem;
+  text-align: left;
+  padding: 1rem;
+  box-shadow: 0px 4px 4px #888888;
+  border-radius: 1rem;
+  background: #DDD;
+}
+
+.card--blue {
+  background: rgb(7, 65, 255);
+  color: #FFF;
+}
+
+.card--red {
+  background: rgb(238, 3, 26);
+  color: #FFF;
+}
+
+.card--round {
+  border-radius: 40rem;
+}
+
+.card__link {
+  background: #fff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card__link:hover {
+  background: #AAA;
+}
+
+.card__link--big {
+  font-size: 3rem;
+  width: 100%;
+  display: block;
+}
+
+.card__image {
+  width: 8rem;
+  max-width: 40%;
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+
+.card__image--tiny {
+  width: 2rem;
+}

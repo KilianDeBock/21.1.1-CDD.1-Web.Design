@@ -1,13 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
 body {
     background-image: url("../images/background.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-repeat: repeat-x;
     background-attachment: fixed;
+    background-size: 80rem;
     background-position: bottom;
     opacity: 1;
     font-family: "Cabin", sans-serif;
+    margin: 1.5rem;
 }
 
 .end {
@@ -15,8 +24,9 @@ body {
 }
 
 .text {
-    width: 50%;
-    margin: .7rem auto;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 50rem;
     color: #13152A;
 }
 
@@ -38,4 +48,8 @@ h2 {
 
 h3 {
     font-size: 3rem;
+}
+
+.too-small {
+    display: none;
 }

@@ -6,10 +6,39 @@
 * {
     margin: 0;
     padding: 0;
-    color: #FAF8FF;
     box-sizing: border-box;
     word-break: break-word;
+}
+
+body {
+    margin: 0 1.5rem;
+    background-color: #141414;
+    color: #FAF8FF;
     font-family: Varela, cursive;
+}
+
+header, main, footer {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 50rem;
+    background-color: #313337;
+    border-left: 2px solid #3E3E3E;
+    border-right: 2px solid #3E3E3E;
+}
+
+header {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 2px solid #3E3E3E;
+}
+
+footer {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3E3E3E;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #8C5261;
+    border-top: 2px solid #3E3E3E;
 }
 
 figure {
@@ -22,13 +51,24 @@ figure {
     text-align: center;
 }
 
-header, main, footer {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 50rem;
-    background-color: #313337;
-    border-left: 2px solid #3E3E3E;
-    border-right: 2px solid #3E3E3E;
+figcaption {
+    background-color: #141414;
+    padding: .5rem 1.5rem;
+}
+
+article {
+    padding: 1.5rem;
+}
+
+section {
+    border-top: 2px solid #3E3E3E;
+}
+
+section h3 {
+    padding: .5rem 1rem;
+    background-color: #4B565D;
+    font-family: Kalam, cursive;
+    border-left: .3rem solid #8C5261;
 }
 
 video {
@@ -53,44 +93,8 @@ img {
     padding: 1.5rem;
 }
 
-figcaption {
-    background-color: #141414;
-    padding: .5rem 1.5rem;
-}
-
-footer {
-    padding: 1.5rem;
-    text-align: center;
-    background-color: #8C5261;
-    border-top: 2px solid #3E3E3E;
-}
-
-section h3 {
-    padding: .5rem 1rem;
-    background-color: #4B565D;
-    font-family: Kalam, cursive;
-    border-left: .3rem solid #8C5261;
-}
-
-h1, h2 {
-    text-align: center;
-    font-family: Kalam, cursive;
-    padding: 1.5rem 1.5rem 0 1.5rem;
-}
-
-header {
-    margin-top: 1.5rem;
-    border-top: 2px solid #3E3E3E;
-}
-
-footer {
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid #3E3E3E;
-}
-
-body {
-    margin: 0 1.5rem;
-    background-color: #141414;
+a {
+    color: #CE7967;
 }
 
 .first-letter {
@@ -98,24 +102,83 @@ body {
     font-weight: bold;
 }
 
-article {
-    padding: 1.5rem;
+.facts {
+    background-color: #3B3B3B;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
 }
 
-section {
-    border-top: 2px solid #3E3E3E;
+.facts--text {
+    /*border: 3px solid black;*/
+    text-align: center;
+    font-family: Kalam, cursive;
 }
 
-h2 {
-    padding-bottom: 1.5rem;
+@media (min-width: 0rem) {
+    .facts {
+        display: block;
+        background-size: 5rem;
+        background-position: 50% 0;
+        padding: 8rem 1.5rem 3rem 1.5rem;
+        background-image: url("../images/mario--tiny.png");
+    }
+
+    .facts--text {
+        width: 100%;
+    }
 }
 
-a {
-    color: #CE7967;
+@media (min-width: 30rem) {
+    .facts {
+        display: flow;
+        padding: 3rem 1.5rem;
+        background-position: 5% 50%;
+        background-image: url("../images/mario--child.png");
+    }
+
+    .facts--text {
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+
+@media (min-width: 40rem) {
+    .facts {
+        background-position: 3% -10%;
+        background-size: 7rem;
+        background-image: url("../images/mario--puber.png");
+    }
+}
+
+@media (min-width: 50rem) {
+    .facts {
+        background-position: 95% -120%;
+        background-size: 7rem;
+        background-image: url("../images/mario--normal.png");
+    }
+
+    .facts--text {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 60rem) {
+    .facts {
+        background-position: 100% 100%;
+        background-size: 7rem;
+        background-image: url("../images/mario--old.png");
+    }
+
+    .facts--text {
+        width: 85%;
+    }
 }
 
 @media (max-width: 180px) {
-    figure {
+    figure, header {
         display: none;
     }
 }
