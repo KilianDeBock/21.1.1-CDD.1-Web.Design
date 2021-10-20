@@ -2,21 +2,33 @@
 
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     word-break: break-word;
 }
 
 body {
+    font-family: "Cabin", sans-serif;
+    margin: 1.5rem;
+    opacity: 1;
     background-image: url("../images/background.svg");
     background-repeat: repeat-x;
     background-attachment: fixed;
-    background-size: 80rem;
     background-position: bottom;
-    opacity: 1;
-    font-family: "Cabin", sans-serif;
-    margin: 1.5rem;
+    background-size: 80rem;
+}
+
+.img--left {
+    float: left;
+    width: 20rem;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.img--right {
+    float: right;
+    width: 15rem;
+    padding: 1rem;
 }
 
 .end {
@@ -25,8 +37,8 @@ body {
 
 .text {
     width: 100%;
-    margin: 0 auto;
     max-width: 50rem;
+    margin: 0 auto;
     color: #13152A;
 }
 
