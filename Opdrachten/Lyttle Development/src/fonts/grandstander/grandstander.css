@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Grandstander";
+    src: url("Grandstander Thin.woff2") format("woff2"),
+    url("Grandstander Thin.woff") format("woff");
+    font-weight: 250;
+}
+
+@font-face {
+    font-family: "Grandstander";
+    src: url("Grandstander Thin Italic.woff2") format("woff2"),
+    url("Grandstander Thin Italic.woff") format("woff");
+    font-weight: 250;
+    font-style: italic;
+}

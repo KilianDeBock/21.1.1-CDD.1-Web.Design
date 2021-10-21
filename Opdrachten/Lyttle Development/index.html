@@ -4,30 +4,56 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Homepage - Lyttle Development</title>
-    <link href="css/main.css" rel="stylesheet">
-    <link href="/favicon.ico" rel="icon">
+    <link href="src/css/main.css" rel="stylesheet">
+    <link href="src/images/favicon.ico" rel="icon">
 </head>
-<body>
+<body id="body">
 <header>
-    <section class="center-box">
+    <div class="top-bar">
         <ul class="nav-menu">
-            <li><a class="nav-menu--active" href="#">Homepage</a></li>
-            <li><a>About us</a></li>
-            <li><a>Contact</a></li>
+            <li><a class="nav-menu--active">Homepage</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+    </div>
+    <section class="img--head img--full-height">
+        <div class="header--banner text--middle">
+            <p class="text--width-size-5">We are</p>
+            <p class="text--width-size-7">Lyttle Development</p>
+            <p class="text--width-size-2 text--italic">"We write code that helps you!" ~Stualyttle</p>
+        </div>
     </section>
 </header>
-<main>
-    <section class="center-box">
-        <p>Main</p>
-    </section>
+<main id="main">
+    <div class="box--middle-content">
+        <article class="article--community-bot">
+            <section class="article--community-bot__starting">
+                <h1>The community bot!</h1>
+                <h2>It all started with the "Questions Of The Days"!</h2>
+                <p>The idea is to react as fast as possible to a question.</p>
+                <p>The first who <em>reacts</em> gets a <strong>special</strong> <em>role or function</em>!</p>
+                <img alt="a random question, for this day." class="article--community-bot__qotd-win" src="src/images/qotd-win.png">
+            </section>
+            <section class="article--community-bot__starting box--right">
+                <p>When someone reacts to the message it will change the topic and that person is announced!</p>
+                <p></p>
+                <img alt="a person who won the question of the day." class="article--community-bot__qotd-won " src="src/images/qotd-won.png">
+            </section>
+            <section class="article--community-bot__starting">
+                <p></p>
+                <p>The people can react to the question in threads, a new feature from discord.</p>
+                <p>We streve to keep our bot updated and new, folowing all new features and reworking old ideas.</p>
+                <img alt="A thread that was opened and renamed after winning." class="article--community-bot__qotd-thread" src="src/images/qotd-thread.png">
+            </section>
+        </article>
+    </div>
 </main>
 <footer>
-    <section class="center-box">
+    <section class="middle-content-box">
         <p>Footer</p>
     </section>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="src/js/main.js"></script>
 </body>
 </html>
