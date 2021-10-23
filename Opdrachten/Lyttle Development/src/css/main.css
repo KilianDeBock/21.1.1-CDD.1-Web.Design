@@ -26,6 +26,15 @@ footer {
     background-color: #33476C;
 }
 
+.footer--buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 /* Article styles */
 
 article section {
@@ -49,7 +58,7 @@ article section:not(:last-child) {
 .article--contact-maps {
     width: 100%;
     height: 40vh;
-    border: 5px solid #3a3a3a;
+    border: none;
     border-radius: 50px;
 }
 
@@ -67,6 +76,23 @@ p {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: #4a7fda;
+}
+
+button {
+    font-size: 16px;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 16px 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+
 img {
     max-width: 100%;
     margin: 1rem 0;
@@ -79,6 +105,23 @@ img {
     max-width: 50rem;
     margin: 0 auto;
     padding: 1.5rem;
+}
+
+.box--shadow {
+    box-shadow: 20px 20px 50px 3px #444444;
+}
+
+.rounded-corners {
+    border-radius: 30px;
+}
+
+.round-corners {
+    border-radius: 100%;
+}
+
+.round-button {
+    width: 5rem;
+    height: 5rem;
 }
 
 /* Navigation Menu */
@@ -150,7 +193,7 @@ img {
 
 .navigation--menu {
     position: absolute;
-    padding: 3rem 1.5rem 1.5rem;
+    padding: 3rem 2rem 1.5rem;
     list-style-type: none;
     transition: transform 0.5s cubic-bezier(0.77, 3, 0.05, 1.0);
     transform: translate(-100%, 0);
@@ -194,7 +237,7 @@ img {
 
 /* Page content */
 
-.box--right {
+.align-right {
     text-align: right;
 }
 
@@ -227,6 +270,28 @@ img {
 .img--head_community__qotd-thread {
     border: 3px solid #3a3a3a;
     border-radius: 3rem;
+}
+
+.img--footer {
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80%;
+}
+
+.img--footer__discord {
+    background-color: #434bec;
+    background-image: url("../images/discord.svg");
+}
+
+.img--footer__twitter {
+    background-color: #54acf4;
+    background-image: url("../images/twitter.svg");
+}
+
+.img--footer__whatsapp {
+    background-color: #1ca213;
+    background-image: url("../images/whatsapp.svg");
 }
 
 /* Custom text */
