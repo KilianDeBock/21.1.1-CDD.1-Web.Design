@@ -9,20 +9,44 @@
 </head>
 <body id="body">
 <header>
-    <ul class="nav-menu">
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a class="nav-menu--active">Contact</a></li>
-    </ul>
-    <section class="img--head img--full-height">
-        <div class="header--banner text--middle">
-            <p class="text--width-size-5">We are</p>
-            <p class="text--width-size-7">Lyttle Development</p>
-            <p class="text--width-size-2 text--italic">"We write code that helps you!" ~Stualyttle</p>
+    <div class="navigation">
+        <input class="navigation--button" type="checkbox"/>
+        <span class="navigation--hamburger"></span>
+        <span class="navigation--hamburger"></span>
+        <span class="navigation--hamburger"></span>
+        <ul class="navigation--menu">
+            <li class="animation__scale"><a href="index.html">Homepage</a></li>
+            <li class="animation__scale"><a href="contact.html">Contact Us</a></li>
+            <li class="animation__scale"><a href="community-bot.html">Community Bot</a></li>
+        </ul>
+    </div>
+    <section class="img--head_contact img--full-height">
+        <div class="header--banner header--text_middle">
+            <p class="text--size__width-5">Based in</p>
+            <p class="text--size__width-7">Belgium</p>
+            <p class="text--size__width-2 text--italic">"Where fries were born!" ~Stualyttle</p>
         </div>
     </section>
 </header>
-
+<main id="main">
+    <div class="box--middle-content">
+        <article class="article--contact">
+            <section class="article--community-bot__starting">
+                <h1>Contact</h1>
+                <iframe class="article--contact-maps" src="https://maps.google.com/maps?amp;hl=en&amp;q=zelzate&amp;t=h&amp;output=embed"></iframe>
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <img alt="a random question, for this day." class="article--community-bot__qotd-win" src="src/images/qotd-win.png">
+            </section>
+        </article>
+    </div>
+</main>
+<footer>
+    <section class="box--middle-content">
+        <p>Footer</p>
+    </section>
+</footer>
 <script src="src/js/main.js"></script>
 </body>
 </html>
