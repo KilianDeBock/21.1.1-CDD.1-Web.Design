@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Grandstander";
+    src: url("grandstander-thin.woff2") format("woff2"),
+    url("grandstander-thin.woff") format("woff");
+    font-weight: 250;
+}
+
+@font-face {
+    font-family: "Grandstander";
+    src: url("grandstander-thin-italic.woff2") format("woff2"),
+    url("grandstander-thin-italic.woff") format("woff");
+    font-weight: 250;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Grandstander";
+    src: url("grandstander-regular.woff2") format("woff2"),
+    url("grandstander-regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Grandstander";
+    src: url("grandstander-italic.woff2") format("woff2"),
+    url("grandstander-italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Grandstander";
+    src: url("grandstander-bold.woff2") format("woff2"),
+    url("grandstander-bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Grandstander";
+    src: url("grandstander-bold-italic.woff2") format("woff2"),
+    url("grandstander-bold-italic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
