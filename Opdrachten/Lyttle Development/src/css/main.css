@@ -37,23 +37,19 @@ footer {
 
 /* Article styles */
 
+div article {
+    margin: 5rem 0;
+}
+
 article section {
     padding: 0 1.5rem;
 }
 
-article section:not(:last-child) {
+article > section:not(:last-child) {
     padding-bottom: 5rem;
 }
 
 /* Article specific styles */
-
-.article--community-bot {
-    margin: 5rem 0;
-}
-
-.article--contact {
-    margin: 5rem 0;
-}
 
 .article--contact-maps {
     width: 100%;
@@ -93,9 +89,13 @@ button {
     border: none;
 }
 
-img {
+img, video {
     max-width: 100%;
     margin: 1rem 0;
+}
+
+video {
+    width: 100%;
 }
 
 /* Middle box */
@@ -235,9 +235,26 @@ img {
     color: #fff;
 }
 
+/* Cards */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: block;
+    width: 16rem;
+    margin: 2rem 3rem
+}
+
 /* Page content */
 
 .align-right {
+    justify-content: flex-end;
     text-align: right;
 }
 
