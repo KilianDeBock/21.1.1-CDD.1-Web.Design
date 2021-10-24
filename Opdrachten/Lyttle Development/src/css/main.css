@@ -62,6 +62,10 @@ section > .signup {
     height: 40vh;
     border: none;
     border-radius: 50px;
+    background-image: url("../images/google-maps.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 /* Default text settings */
