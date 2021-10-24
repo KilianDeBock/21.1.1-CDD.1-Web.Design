@@ -240,14 +240,17 @@ nav {
 
 .navigation--menu li {
     font-size: 1.5rem;
-    padding: 10px 0;
+    margin: 10px 0;
 }
 
 
 .navigation--menu li a {
+    padding: 0.5rem;
     transition: color 0.3s ease;
     text-decoration: none;
     color: #fff;
+    border-radius: 10px;
+    background-color: rgba(16, 16, 16, 0.6);
 }
 
 /* Headers */
