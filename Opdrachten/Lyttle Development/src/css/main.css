@@ -57,11 +57,20 @@ section > .signup {
 
 /* Article specific styles */
 
+.iframe--google-maps,
 .article--contact-maps {
     width: 100%;
     height: 40vh;
     border: none;
     border-radius: 50px;
+
+}
+
+.article--contact-maps {
+    display: none;
+}
+
+.iframe--google-maps {
     background-image: url("../images/google-maps.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
