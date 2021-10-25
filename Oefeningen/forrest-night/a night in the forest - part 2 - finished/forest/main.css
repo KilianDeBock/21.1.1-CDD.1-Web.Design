@@ -1,0 +1,65 @@
+*{
+    margin:0;
+}	
+body{
+   background-image: url("background.svg");
+   background-attachment: fixed;
+   background-position:bottom;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+@font-face{
+    font-family: "cabin";
+    src: url('../Cabin/cabin-variablefont_wdthwght-webfont.woff2') format('woff2'), 
+      url('../Cabin/cabin-variablefont_wdthwght-webfont.woff') format('woff');
+}
+html{
+    font-family: "cabin", Arial, Helvetica, sans-serif;
+    letter-spacing:0.1rem;
+}
+
+.container {
+    width: 40rem;
+    max-width: 100%;
+    margin:0 auto;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+h1,h2{
+    text-align: center;
+    margin: 3rem 0 0 0;
+}
+
+svg {
+    float: left;
+    width: 8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    max-width: 40%;
+}
+
+.floating-right {
+    float: right;
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+p,h2{
+    color: #13152A;
+    margin: 1rem 0;
+}
+
+.above{
+    text-align: right;
+}
+
+.h2{
+    margin-bottom: 18vw;
+}
+.down{
+    color: white;
+    width:40rem;
+    max-width: 100%;
+    text-align: left;
+}
