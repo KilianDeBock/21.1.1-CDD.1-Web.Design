@@ -1,58 +1,82 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
 }
 
 html {
-  min-height: 100%;
+    min-height: 100%;
 }
 
 body {
-  min-height: 100%;
-  font-family: sans-serif;
-  margin: 0;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    font-family: sans-serif;
+    min-height: 100%;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
 }
 
 a {
-  color:white;
+    color: white;
 }
 
 .pricing-plans {
-  width: 48rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50rem;
+    margin: 0 auto;
 }
 
 .plan {
-  background:rgba(255,255,255,0.2);
-  border-radius: 4px;
+    display: flex;
+    flex-basis: 12rem;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .plan > * {
-  flex: 0 1 auto;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+.plan__features {
+    padding: 0;
 }
 
 .plan__features li {
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: .5rem;
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .plan__features li:last-child {
-  border-bottom: 0;
+    border-bottom: 0;
 }
 
 .plan a {
-  text-decoration: none;
-  background:#FEFF00;
-  padding: 0.5rem;
-  color:black;
-  border-radius: 4px;
-  display: block;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    background: #FEFF00;
 }
 
 .plan h2 {
-  color:white;
-  letter-spacing: 2px;
-  text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .plan__price {
-  font-size: 3.125rem;
+    font-size: 3.125rem;
+    margin-top: auto
 }
