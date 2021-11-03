@@ -46,6 +46,14 @@ a {
     /*flex-wrap: wrap;*/
 }
 
+/*.call-to-action {*/
+/*    order: 0;*/
+/*}*/
+
+/*.logo {*/
+/*    order: 0;*/
+/*}*/
+
 .button {
     padding: 5px 10px;
     background-color: white

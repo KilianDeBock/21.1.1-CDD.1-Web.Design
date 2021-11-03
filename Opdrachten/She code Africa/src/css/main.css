@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "open-sans";
+    src: url("../fonts/open-sans/open-sans.woff2") format("woff2"),
+    url("../fonts/open-sans/open-sans.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url("../fonts/open-sans/open-sans__bold.woff2") format("woff2"),
+    url("../fonts/open-sans/open-sans__bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "otomanopee-one";
+    src: url("../fonts/otomanopee-one/otomanopee-one.woff2") format("woff2"),
+    url("../fonts/otomanopee-one/otomanopee-one.woff") format("woff");
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: open-sans, Arial, Helvetica, sans-serif;
+    word-break: break-word;
+}
+
+.navigation {
+    font-family: otomanopee-one, Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 3px solid #f3f3f3;
+    background-color: #fff;
+    box-shadow: 0 2px 5px #f3f3f3; /* Extra */
+}
+
+.navigation a {
+    flex-grow: 1;
+    width: 100%;
+    padding: 1rem;
+    transition-duration: .2s;
+    transition-property: opacity, color, border;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.navigation a:hover {
+    opacity: 0.6;
+}
+
+.navigation a:hover:not(.navigation__home) {
+    color: #6d0240;
+}
+
+nav .nav__selected {
+    color: #6d0240;
+}
+
+.navigation img {
+    width: 4rem;
+}
+
+@media (min-width: 25rem) {
+    .navigation a {
+        display: block;
+        width: auto;
+        transition-property: box-shadow
+    }
+
+    .navigation a:hover:not(.navigation__home) {
+        box-shadow: 0 5px #6d0240;
+    }
+
+    nav .nav__selected {
+        box-shadow: 0 5px #6d0240;
+    }
+
+    nav .navigation__about {
+        order: 1;
+        margin-left: 10px;
+        text-align: right;
+    }
+
+    nav .navigation__home {
+        flex-grow: 0;
+        order: 2;
+    }
+
+    nav .navigation__support {
+        order: 3;
+        margin-right: 10px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 28rem) {
+    .navigation a {
+        flex-grow: 0;
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    nav .navigation__home {
+        order: 1;
+        margin-right: auto;
+    }
+
+    nav .navigation__home {
+        order: 1;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 55rem) {
+    .navigation {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+    }
+
+    main {
+        padding-top: 8.6rem;
+    }
+}

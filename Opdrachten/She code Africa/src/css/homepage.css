@@ -1,0 +1,92 @@
+footer {
+    background-color: #212121
+}
+
+.footer-container {
+    /*display: inline-block;*/
+}
+
+.footer {
+    position: relative;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.footer img {
+    width: 100%;
+}
+
+.footer-scroll {
+    font-size: 4vw;
+    position: relative;
+    top: 27vw;
+    left: 3vw;
+    width: 35vw;
+    transform: rotate(51deg);
+    border-radius: 3px;
+    background-color: #b70569;
+}
+
+/* The code you are about to read is killing, its recommended not to read it. Its not okay and just a bodge... */
+@media (min-width: 10rem) {
+    .footer-scroll {
+        font-size: 5vw;
+        top: 32vw;
+        left: 4vw;
+        width: 42vw;
+    }
+}
+
+@media (min-width: 15rem) {
+    .footer-scroll {
+        font-size: 6vw;
+        top: 37vw;
+        left: 4.2vw;
+        width: 47vw;
+    }
+}
+
+@media (min-width: 20rem) {
+    .footer-scroll {
+        top: 40vw;
+        left: 5.3vw;
+        width: 50vw;
+    }
+}
+
+@media (min-width: 30rem) {
+    .footer-scroll {
+        font-size: 1.8rem;
+        top: 0;
+        left: 0;
+        width: 250px;
+        transform: translate(35px, 210px) rotate(51deg);
+    }
+}
+
+/* End killing */
+
+.scroll-container {
+    overflow: hidden;
+}
+
+.scroll-text {
+    transform: translateX(100%);
+    animation: scroll-text 4s linear infinite;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.footer .footer-scroll-text {
+    text-transform: uppercase;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-350%);
+    }
+}
