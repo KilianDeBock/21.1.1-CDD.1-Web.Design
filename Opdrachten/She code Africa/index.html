@@ -5,34 +5,84 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>She Code Africa</title>
     <link href="src/css/main.css" rel="stylesheet">
-    <link href="src/css/homepage.css" rel="stylesheet">
+    <link href="src/css/navigation.css" rel="stylesheet">
+    <link href="src/css/text.css" rel="stylesheet">
+    <link href="src/css/animations.css" rel="stylesheet">
+    <!-- Fav Icons -->
+    <link href="src/images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="src/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="src/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="src/images/favicons/site.webmanifest" rel="manifest">
+    <link color="#5bbad5" href="src/images/favicons/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="src/images/favicons/favicon.ico" rel="shortcut icon">
+    <meta content="#da532c" name="msapplication-TileColor">
+    <meta content="src/images/favicons/browserconfig.xml" name="msapplication-config">
+    <meta content="#ffffff" name="theme-color">
+    <!-- Fav Icons END -->
 </head>
 
 <body>
 <header>
     <nav class="navigation">
         <a class="navigation__home" href="index.html"><img alt="logo" src="src/images/logo.svg"></a>
-        <a class="navigation__about nav__selected" href="pages/about.html">About</a>
+        <a class="navigation__about" href="pages/about.html">About</a>
         <a class="navigation__support" href="pages/support-us.html">Support Us</a>
     </nav>
+
+    <div class="container">
+        <section class="section--front-page banner">
+            <img alt="Computers and servers with a girl zitting on it." class="banner__img" src="src/images/homepage.svg">
+            <section class="banner-item">
+                <h1>She Code Africa, <span class="color--red">women in Tech</span></h1>
+                <p>We are a non-profit organisation focused on celebrating and empowering young girls and women in tech across Africa.</p>
+                <button class="color--white button--blue__arrow bold">Join us!</button>
+            </section>
+        </section>
+    </div>
 </header>
 
-<main>
-    She Code Africa, women in Tech
-    We are a non-profit organisation focused on celebrating and empowering young girls and women in tech across Africa.
-    Join us!
-
-    Support us
-    Airco teaching space in Kigali
-    $640 to go
-    We need a total of 800 dollars to secure a airco teaching space in Kigali. Learn more.
-    Batch buying of dev laptops
-    $8000 to go
-    To make sure our ladies have the right equipment to get started, we need your support. Learn more
-    Monthly gatherings
-    $129 to go
-    On every first tuesday of the month we would like to host a speaker in our very own space. Learn more
-
+<main class="bg-color--gray">
+    <div class="container">
+        <h2 class="cards__header">Support us</h2>
+        <section class="section--support-us cards align-left">
+            <article class="article--airco card">
+                <img alt="Group of people." class="card__banner" src="src/images/group-of-people.jpg">
+                <section class="card__content">
+                    <img alt="Flag of Rwanda" class="card__flag" src="src/images/rwanda.svg">
+                    <h3 class="underline space">Airco teaching space in Kigali</h3>
+                    <p class="color--gray">$640 to go</p>
+                    <div class="progress-bar space">
+                        <div class="progress" style="width: 20%;"></div>
+                    </div>
+                    <p>We need a total of 800 dollars to secure a airco teaching space in Kigali. <a class="underline">Learn more</a></p>
+                </section>
+            </article>
+            <article class="article--laptops card">
+                <img alt="Working on laptop." class="card__banner" src="src/images/working-on-laptop.jpg">
+                <section class="card__content">
+                    <img alt="Flag of Namibia" class="card__flag" src="src/images/namibia.svg">
+                    <h3 class="underline space">Batch buying of dev laptops</h3>
+                    <p class="color--gray">$8000 to go</p>
+                    <div class="progress-bar space">
+                        <div class="progress" style="width: 45%;"></div>
+                    </div>
+                    <p>To make sure our ladies have the right equipment to get started, we need your support. <a class="underline" href="https://">Learn more</a></p>
+                </section>
+            </article>
+            <article class="article--meetings card">
+                <img alt="People in meeting." class="card__banner" src="src/images/event.jpg">
+                <section class="card__content">
+                    <img alt="Flag of Ethiopia" class="card__flag" src="src/images/ethiopia.svg">
+                    <h3 class="underline space">Monthly gatherings</h3>
+                    <p class="color--gray">$129 to go</p>
+                    <div class="progress-bar space">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p>On every first tuesday of the month we would like to host a speaker in our very own space. <a class="underline">Learn more</a></p>
+                </section>
+            </article>
+        </section>
+    </div>
 </main>
 
 <footer>

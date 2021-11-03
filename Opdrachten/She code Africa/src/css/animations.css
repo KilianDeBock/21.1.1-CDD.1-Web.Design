@@ -73,7 +73,7 @@ footer {
 
 .scroll-text {
     transform: translateX(100%);
-    animation: scroll-text 4s linear infinite;
+    animation: scroll-text 5s linear infinite;
     white-space: nowrap;
     color: #fff;
 }
