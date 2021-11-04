@@ -40,9 +40,12 @@
 }
 
 .banner__fullscreen {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    background-repeat: no-repeat; /* No repeat. */
     background-attachment: fixed;
+    background-position: center;
+    background-size: cover; /* Fill, if zoomed out */
 }
 
 @media (min-width: 35rem) {
@@ -56,8 +59,6 @@
 
 .cards {
     display: flex;
-    align-content: stretch;
-    align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -69,45 +70,61 @@
 }
 
 .card {
-    flex-grow: 1;
-    width: 30%;
     min-width: 5rem;
     margin: .5rem;
+}
+
+.card__box {
+    align-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+    width: 30%;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 3px 3px 10px #7C7C7C7C;
 }
 
-.card .card__banner {
+.card__item {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.card__item_content {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.card__banner {
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
 
-.card .card__content {
+.card__content {
     padding: 0 1rem 1rem;
 }
 
-.card .card__flag {
+.card__flag {
     float: left;
     width: 2rem;
     margin-top: .5rem;
     margin-right: .5rem;
 }
 
-@media (min-width: 12rem) {
-    .card {
-        min-width: 10rem;
-    }
-}
-
-/* Round cards */
-
-.cards__round {
-
-}
-
-.card__round {
-
+.card__img__round {
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #D33F00;
 }
 
 /* Progress bars */
@@ -157,7 +174,56 @@
     background-image: url("../images/meeting-photo.png");
 }
 
+.img_people__ada {
+    background-image: url("../images/people/ada-nduka-oyom.jpg");
+    background-position: top;
+}
+
+.img_people__chidinma {
+    background-image: url("../images/people/chidinma-njoku.jpg");
+}
+
+.img_people__elizabeth {
+    background-image: url("../images/people/elizabeth-okaome.jpg");
+}
+
+.img_people__eniola {
+    background-image: url("../images/people/eniola-ipoola.png");
+    background-position: left;
+}
+
+.img_people__esther {
+    background-image: url("../images/people/esther-okafor.jpg");
+}
+
+.img_people__goziem {
+    background-image: url("../images/people/goziem-onugha.jpg");
+    background-position: top;
+}
+
+.img_people__naomi {
+    background-image: url("../images/people/naomi-usman.jpg");
+}
+
+.img_people__oluchi {
+    background-image: url("../images/people/oluchi-nwenyi.jpg");
+}
+
+.img_people__omotola {
+    background-image: url("../images/people/omotola-eunice-omotayo.png");
+}
+
+.img_people__temilola {
+    background-image: url("../images/people/temilola-kutelu.jpg");
+}
+
+.img_people__zainab {
+    background-image: url("../images/people/zainab-abubakar.jpg");
+    background-position: top;
+}
+
 /* Properties */
+
 .space_container *:not(:last-child) {
     margin-bottom: 1rem;
 }
@@ -168,6 +234,10 @@
 
 .spaces {
     margin-bottom: 2rem;
+}
+
+.center {
+    margin: 0 auto;
 }
 
 /* special styles */
@@ -190,4 +260,35 @@
     background-repeat: no-repeat;
     background-position: 88% 50%;
     background-size: .8rem;
+}
+
+@media (min-width: 12rem) {
+    .card {
+        min-width: 10rem;
+    }
+}
+
+@media (min-width: 32rem) {
+    .card__item {
+        width: 40%;
+    }
+}
+
+@media (min-width: 44rem) {
+    .card__item {
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin: 1.5rem 1rem;
+    }
+
+    .card__item_content {
+        margin-top: 0;
+        margin-left: 1rem;
+        text-align: left;
+    }
+
+    .card__img__round {
+        margin: 0 .8rem 0 0;
+    }
 }

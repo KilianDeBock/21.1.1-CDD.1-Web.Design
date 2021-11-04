@@ -47,22 +47,22 @@ a {
 
 /* Text Class Properties */
 
-.align-left {
+.txt_align-left {
     text-align: left;
 }
 
-.align-right {
+.txt_align-right {
     text-align: right;
 }
 
-.align-center {
+.txt_align-center {
     text-align: center;
 }
 
-.bold {
+.txt_bold {
     font-weight: bold;
 }
 
-.underline {
+.txt_underline {
     text-decoration: underline;
 }

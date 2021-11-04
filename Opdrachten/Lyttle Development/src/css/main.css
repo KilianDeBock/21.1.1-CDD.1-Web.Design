@@ -305,12 +305,12 @@ nav {
 
 /* Page content */
 
-.align-right {
+.txt_align-right {
     justify-content: flex-end;
     text-align: right;
 }
 
-.align-center {
+.txt_align-center {
     display: inline-block;
     justify-content: center;
     text-align: center;
