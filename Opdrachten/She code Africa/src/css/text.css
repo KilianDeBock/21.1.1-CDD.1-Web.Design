@@ -52,14 +52,14 @@ blockquote {
 }
 
 .quote {
-    padding-left: 1rem;
+    padding: .5rem 0 .5rem 1rem;
     border-left: 3px solid #6D033F;
 }
 
 
 @media (min-width: 32rem) {
     .quote {
-        padding-left: 2.5rem;
+        padding: .5rem 0 .5rem 2.5rem;
     }
 }
 
