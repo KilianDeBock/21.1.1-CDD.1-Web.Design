@@ -28,6 +28,61 @@ footer {
     background-color: #b70569;
 }
 
+.scroll-container {
+    overflow: hidden;
+}
+
+.scroll-text {
+    transform: translateX(100%);
+    animation: scroll-text 5s linear infinite;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.footer .footer-scroll-text {
+    text-transform: uppercase;
+}
+
+/* Triangle animation */
+.animation__triangle {
+    position: relative;
+    left: -.5rem;
+    float: left;
+    margin: 0 1rem .5rem 0;
+}
+
+.animation__triangle_round {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+    border-radius: 32rem 22rem 32rem 17rem;
+    background-color: #fff;
+}
+
+.animation__triangle_round p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    top: -50%;
+    transform: translateY(50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px 0 2px #727272, 0 1px 2px #727272, 1px 0 2px #727272, 0 -1px 2px #727272;
+}
+
+
+.animation__triangle img {
+    position: absolute;
+    top: -.5rem;
+    left: .5rem;
+    width: 8rem;
+    height: 8rem;
+    transition: transform 1s ease;
+    transform-origin: 50% 65%;
+    animation: triangle 4s linear infinite normal;
+}
+
+
 /* The code you are about to read is killing, its recommended not to read it. Its not okay and just a bodge... */
 @media (min-width: 10rem) {
     .footer-scroll {
@@ -67,19 +122,31 @@ footer {
 
 /* End killing */
 
-.scroll-container {
-    overflow: hidden;
-}
-
-.scroll-text {
-    transform: translateX(100%);
-    animation: scroll-text 5s linear infinite;
-    white-space: nowrap;
-    color: #fff;
-}
-
-.footer .footer-scroll-text {
-    text-transform: uppercase;
+@keyframes triangle {
+    0% {
+        transform: rotate(0deg);
+    }
+    5% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    50.001% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(90deg);
+    }
+    65% {
+        transform: rotate(100deg);
+    }
+    95% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes scroll-text {

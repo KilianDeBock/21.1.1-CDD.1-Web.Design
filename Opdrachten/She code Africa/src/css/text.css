@@ -29,7 +29,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+blockquote {
     font-family: otomanopee-one, Arial, Helvetica, sans-serif;
 }
 
@@ -43,6 +44,23 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+blockquote {
+    font-size: 1.8rem;
+    color: #777777;
+}
+
+.quote {
+    padding-left: 1rem;
+    border-left: 3px solid #6D033F;
+}
+
+
+@media (min-width: 32rem) {
+    .quote {
+        padding-left: 2.5rem;
+    }
 }
 
 /* Text Class Properties */
