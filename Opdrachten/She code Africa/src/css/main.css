@@ -6,6 +6,45 @@
     padding: 0;
 }
 
+footer {
+    padding: 5.5rem 1.5rem;
+    text-align: center;
+    background-color: #212121;
+}
+
+.footer {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.footer img {
+    width: 30rem;
+    max-width: 100%;
+}
+
+.footer-scroll {
+    font-size: 10vw;
+    line-height: 1;
+    position: absolute;
+    top: 7.8%;
+    left: -12%;
+    width: 60%;
+    height: 11vw;
+    transform: rotate(51deg) translate(50%);
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #b70569;
+}
+
+@media (min-width: 34rem) {
+    .footer-scroll {
+        font-size: 3.4rem;
+        height: 3.7rem;
+    }
+}
+
 video {
     width: 100%;
 }
