@@ -27,22 +27,17 @@ footer {
     font-size: 10vw;
     line-height: 1;
     position: absolute;
-    top: 7.8%;
+    top: 7.77%;
     left: -12%;
+    overflow: hidden;
     width: 60%;
-    height: 11vw;
+    height: calc((100vw - 3rem) * 0.11);
     transform: rotate(51deg) translate(50%);
+    white-space: nowrap;
     text-transform: uppercase;
     color: #fff;
     border-radius: 8px;
     background-color: #b70569;
-}
-
-@media (min-width: 34rem) {
-    .footer-scroll {
-        font-size: 3.4rem;
-        height: 3.7rem;
-    }
 }
 
 video {

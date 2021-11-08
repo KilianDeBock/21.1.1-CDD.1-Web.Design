@@ -1,8 +1,33 @@
+.footer-scroll_text {
+    transform: translate(100%, 0);
+    animation: footer-scroll 8s linear infinite;
+}
+
+@media (min-width: 34rem) {
+    .footer-scroll {
+        font-size: 3.4rem;
+        height: 3.7rem;
+    }
+}
+
+@keyframes footer-scroll {
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    100% {
+        transform: translate(-600%, 0);
+    }
+}
+
 /* Triangle animation */
 .animation__triangle {
     position: relative;
     left: -.5rem;
+    display: flex;
     float: left;
+    overflow: hidden;
+    justify-content: center;
     margin: 0 1rem .5rem 0;
 }
 
@@ -17,7 +42,7 @@
 
 .animation__triangle_round p {
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 1.08;
     top: -50%;
     transform: translateY(50%);
     text-align: center;
@@ -34,32 +59,20 @@
     height: 8rem;
     transition: transform 1s ease;
     transform-origin: 50% 65%;
-    animation: triangle 4s linear infinite normal;
+    animation-name: triangle;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 @keyframes triangle {
     0% {
         transform: rotate(0deg);
     }
-    5% {
-        transform: rotate(10deg);
-    }
-    50% {
-        transform: rotate(360deg);
-    }
-    50.001% {
-        transform: rotate(0deg);
-    }
     60% {
-        transform: rotate(90deg);
-    }
-    65% {
-        transform: rotate(100deg);
-    }
-    95% {
-        transform: rotate(10deg);
+        transform: rotate(450deg);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 }
