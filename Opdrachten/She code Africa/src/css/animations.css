@@ -23,9 +23,7 @@
 /* Triangle animation */
 .animation__triangle {
     position: relative;
-    left: -.5rem;
-    display: flex;
-    float: left;
+    display: none;
     overflow: hidden;
     justify-content: center;
     margin: 0 1rem .5rem 0;
@@ -37,7 +35,7 @@
     height: 7rem;
     margin: 1rem;
     border-radius: 32rem 22rem 32rem 17rem;
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 
 .animation__triangle_round p {
@@ -46,33 +44,51 @@
     top: -50%;
     transform: translateY(50%);
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
     text-shadow: -1px 0 2px #727272, 0 1px 2px #727272, 1px 0 2px #727272, 0 -1px 2px #727272;
 }
 
 
 .animation__triangle img {
     position: absolute;
-    top: -.5rem;
-    left: .5rem;
     width: 8rem;
     height: 8rem;
     transition: transform 1s ease;
     transform-origin: 50% 65%;
     animation-name: triangle;
-    animation-duration: 3s;
+    animation-duration: 7s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes triangle {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(-10deg);
     }
-    60% {
-        transform: rotate(450deg);
+    65% {
+        transform: rotate(460deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(350deg);
+    }
+}
+
+@media (min-width: 30rem) {
+    .animation__triangle {
+        left: -.5rem;
+        display: block;
+        float: left;
+        overflow: visible;
+    }
+
+    .animation__triangle img {
+        top: -.5rem;
+        left: .5rem;
+    }
+}
+
+@media (min-width: 15rem) {
+    .animation__triangle {
+        display: flex;
     }
 }

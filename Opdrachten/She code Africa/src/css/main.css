@@ -1,5 +1,16 @@
 /* Global settings */
 
+:root {
+    --color-light_pink: #b70569;
+    --color-pink: #6d0240;
+    --color-orange: #D33F00;
+    --color-blue: #006ED3;
+    --color-black: #212121;
+    --color-dark_gray: #666666;
+    --color-gray: #DDDDDD;
+    --color-white: #fff;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +20,7 @@
 footer {
     padding: 5.5rem 1.5rem;
     text-align: center;
-    background-color: #212121;
+    background-color: var(--color-black);
 }
 
 .footer {
@@ -35,9 +46,9 @@ footer {
     transform: rotate(51deg) translate(50%);
     white-space: nowrap;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--color-white);
     border-radius: 8px;
-    background-color: #b70569;
+    background-color: var(--color-light_pink);
 }
 
 video {
@@ -46,16 +57,22 @@ video {
 
 /* Middle container */
 
+.contain {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
 .container {
     width: 100%;
-    max-width: 45rem;
+    max-width: 50rem;
     margin: 0 auto;
     padding: 2rem .5rem;
 }
 
 .middle-box {
     width: 100%;
-    max-width: 45rem;
+    max-width: 50rem;
     margin: 0 auto;
     padding: 2rem 0;
 }
@@ -125,8 +142,8 @@ video {
     flex-grow: 1;
     width: 30%;
     border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 3px 3px 10px #7C7C7C7C;
+    background-color: var(--color-white);
+    box-shadow: 3px 3px 10px var(--color-gray);;
 }
 
 .card__item {
@@ -169,7 +186,7 @@ video {
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #D33F00;
+    box-shadow: 0 0 0 4px var(--color-white), 0 0 0 8px var(--color-orange);
 }
 
 /* Progress bars */
@@ -182,37 +199,37 @@ video {
 }
 
 .progress-bar {
-    background-color: #DDDDDD;
+    background-color: var(--color-gray);
 }
 
 .progress-bar .progress {
-    background-color: #006ED3;
+    background-color: var(--color-blue);
 }
 
 /* colors */
 
 .color--white {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .color--gray {
-    color: #666666;
+    color: var(--color-dark_gray);
 }
 
 .color--red {
-    color: #6d0240;
+    color: var(--color-pink);
 }
 
 .color--blue {
-    color: #006fd5;
+    color: var(--color-blue);
 }
 
 .bg-color--gray {
-    background-color: #DDDDDD;
+    background-color: var(--color-gray);
 }
 
 .bg-color--blue {
-    background-color: #006fd5;
+    background-color: var(--color-blue);
 }
 
 .img__meeting {

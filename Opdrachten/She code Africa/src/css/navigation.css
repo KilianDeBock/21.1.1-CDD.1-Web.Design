@@ -1,20 +1,23 @@
 /* Navigation (standard mobile mode) */
 
+nav {
+    border-bottom: 3px solid #f3f3f3;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 5px #f3f3f3; /* Extra */
+}
+
 .navigation {
     font-family: otomanopee-one, Arial, Helvetica, sans-serif;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 3px solid #f3f3f3;
-    background-color: #fff;
-    box-shadow: 0 2px 5px #f3f3f3; /* Extra */
 }
 
 .navigation a {
     flex-grow: 1;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
     transition-duration: .2s;
     transition-property: opacity, color;
     text-align: center;
@@ -27,11 +30,11 @@
 }
 
 .navigation a:hover:not(.navigation__home) {
-    color: #6d0240;
+    color: var(--color-pink);
 }
 
 nav .nav__selected {
-    color: #6d0240;
+    color: var(--color-pink);
 }
 
 .navigation img {
@@ -47,11 +50,11 @@ nav .nav__selected {
     }
 
     .navigation a:hover:not(.navigation__home) {
-        box-shadow: 0 5px #6d0240;
+        box-shadow: 0 5px var(--color-pink);
     }
 
     nav .nav__selected {
-        box-shadow: 0 5px #6d0240;
+        box-shadow: 0 5px var(--color-pink);
     }
 
     nav .navigation__about {
@@ -93,7 +96,7 @@ nav .nav__selected {
 
 /* At 55rem set navigation fixed. */
 @media (min-width: 55rem) {
-    .navigation {
+    nav {
         position: fixed;
         z-index: 100;
         top: 0;
@@ -102,5 +105,10 @@ nav .nav__selected {
 
     header {
         padding-top: 8.6rem;
+    }
+
+    .navigation__home {
+        margin: 0;
+        padding: 0
     }
 }
