@@ -41,11 +41,12 @@ nav .nav__selected {
     width: 4rem;
 }
 
-/* Go to tabled mode */
+/* Go to tablet mode */
 @media (min-width: 23rem) {
     .navigation a {
         display: block;
         width: auto;
+        padding: 1em .8rem;
         transition-property: opacity, color, box-shadow;
     }
 
@@ -80,7 +81,12 @@ nav .nav__selected {
     .navigation a {
         flex-grow: 0;
         margin-left: 1rem;
+        padding: 1.5rem .5rem;
         text-align: center;
+    }
+
+    .navigation a:first-child {
+        padding-left: 0;
     }
 
     nav .navigation__home {
@@ -104,7 +110,7 @@ nav .nav__selected {
     }
 
     header {
-        padding-top: 8.6rem;
+        padding-top: 9.6rem;
     }
 
     .navigation__home {

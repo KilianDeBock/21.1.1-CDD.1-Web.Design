@@ -23,7 +23,7 @@
 /* Triangle animation */
 .animation__triangle {
     position: relative;
-    display: none;
+    display: flex;
     overflow: hidden;
     justify-content: center;
     margin: 0 1rem .5rem 0;
@@ -87,8 +87,8 @@
     }
 }
 
-@media (min-width: 15rem) {
+@media (min-width: 12rem) {
     .animation__triangle {
-        display: flex;
+        overflow: visible;
     }
 }
